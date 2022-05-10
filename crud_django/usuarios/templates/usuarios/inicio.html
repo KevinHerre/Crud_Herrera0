@@ -1,0 +1,35 @@
+{% load static  %}
+<link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+
+<div class="container">
+    <a href= "{% url 'aplication:create' %}" class="btn btn-outline-dark mt-5">Crear Nuevo</a>
+    <table class="table table-bordered table-info mt-5 text-center">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>name</th>
+                <th>last_name</th>
+                <th>age</th>
+                <th>email</th>
+            </tr>
+        </thead>
+    <tbody>
+            {% for usuario in usuarios %}
+        <tr>
+                <th>{{usuario.id}}</th>
+                <td>{{usuario.name}}</td>
+                <td>{{usuario.last_name}}</td>
+                <td>{{usuario.age}}</td>
+                <td>{{usuario.email}}</td>
+            <td>
+                <a href= "{% url 'aplication:detail' usuario.id %}" class="btn btn-danger m-1">Ver mas</a>
+                <a href= "{% url 'aplication:update' usuario.id %}" class="btn btn-success m-1">Editar</a>
+                <a href= "{% url 'aplication:delete' usuario.id %}" class="btn btn-primary m-1">Eliminar</a>
+            </td>
+        </tr>    
+            {% endfor %}    
+    </tbody>    
+</table>
+    
+
+</div>
