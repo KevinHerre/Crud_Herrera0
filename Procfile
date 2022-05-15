@@ -1,0 +1,1 @@
+web: gunicorn Crud_Herrera0.wsgi --log-file -
