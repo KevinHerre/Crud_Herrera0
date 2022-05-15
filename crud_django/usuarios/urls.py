@@ -5,9 +5,9 @@ app_name = 'aplication'
 
 urlpatterns = [
    
-   path('' , Home.as_view() , name = 'Home') ,
+  
    path('' , v.inicio , name = 'inicio') ,
-   
+   path('' , Home.as_view() , name = 'Home') ,
    path('detail_<int:id>/', v.detail , name= 'detail') , 
    path('create/' , v.create_usuario , name='create') ,
    path('update_<int:id>/' , v.update_usuario , name = 'update') ,
