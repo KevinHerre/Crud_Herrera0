@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'crud_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ddj4r5o8mojlo9',
-        'USER': 'yhezqxtyjuhhfd',
-        'PASSWORD': 'd31d021ec52c18edba1af9ac65214bcfbc6722fd83da9120c264927b69174cf0',
-        'HOST': 'ec2-44-196-223-128.compute-1.amazonaws.com',
+        'NAME': 'usuarios',
+        'USER': 'postgres',
+        'PASSWORD': 'Udla2018',
+        'HOST': 'localhost',
         'PORT': 5432 ,
     }
 }
