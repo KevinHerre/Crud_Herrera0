@@ -77,14 +77,15 @@ WSGI_APPLICATION = 'crud_django.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'usuarios',
+        'ENGINE': 'django.db.backends.postgresql_psypg2',
+        'NAME':'usuarios',
         'USER': 'postgres',
         'PASSWORD': 'Udla2018',
         'HOST': 'localhost',
         'PORT': 5432 ,
     }
 }
+
 
 
 # Password validation
